@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pathway Gothic One', sans-serif !important}
+
+/*Começo do código referente ao cabeçalho do site*/
+.header {
+    background-color: #121212;
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+.header-p {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 80vw;
+    gap: 10px;
+
+}
+
+.logo-header {
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}
+
+.logo-header,
+.logo-header img {
+    height: 8vw;
+    width: 8vw;
+}
+
+/*links do cabeçalho*/
+
+.links {
+    height: 8vw;
+}
+
+.links ul {
+    margin-top: 2vw;
+    height: 4vw;
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+.links a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.links li>div {
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 0%;
+    height: 2px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.links li:hover>div {
+    width: 100%;
+}
+
+
+/*fim da barras do link*/
+/*Fim dos links do cabeçalho*/
+
+/*Começo da responsividade do cabeçalho*/
+/*Tablet 1024px a 600px*/
+@media (max-width:1024px) and (min-width:600px) {
+    .links a {
+        font-size: 1rem;
+    }
+}
+
+/*Fim do tablet*/
+/*Celular 600px abaixo*/
+@media (max-width:600px) {
+    .links a {
+        font-size: .8rem;
+    }
+}
+
+/*Fim do celular*/
+/*Fim da responsividade do cabeçalho*/
+
+/*Fim do código referente ao cabeçalho do site*/
+
+/*Começo do código referente ao slider principal do site*/
+.carousel {
+    width: 100vw;
+
+
+}
+
+.carousel img {
+    max-height: 80vh;
+}
+
+.seta-p {
+    background-color: #ffffffb4;
+    height: 8vw;
+    width: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 100%;
+}
+
+.seta-p img {
+    height: 5vw;
+}
+
+/*Começo da responsividade do slider*/
+
+/*Tablet de 1024px a 600px */
+@media (max-width:1024px) and (min-width:600px) {
+    .seta-p {
+        width: 10vw;
+        height: 10vw;
+    }
+
+
+}
+
+/*Fim do tablet*/
+
+/*Fim da responsividade do slider*/
+
+/*Fim do código referente ao cabeçalho principal do site*/
+
+
+/*Começo do código referente ao sobre nós*/
+/*Começo do titulo*/
+.sobre-nos {
+    padding-top: 5vh;
+    width: 100vw;
+    background-color: #D9D9D9;
+
+    color: black;
+
+    padding-bottom: 2vw;
+}
+
+.titulo {
+    margin: 0 auto;
+    width: 25vw;
+    margin-bottom: 2vw;
+
+}
+
+
+
+.t1 {
+    font-size: 3vw;
+}
+
+.t2 {
+    text-align: left;
+    font-size: 6.8vw;
+
+}
+
+.t2 span:last-of-type {
+    color: yellow;
+    background-color: #000000;
+    padding: 10px 5px;
+
+}
+
+/*Fim do titulo*/
+
+/*Começo da segunda parte*/
+.sobre-nos-p {
+    width: 70vw;
+    gap: 5vw;
+    display: flex;
+align-items: center;
+    margin: 0 auto;
+}
+
+.academia {
+    width: 50vw;
+    background-color: #141414;
+    color: #ffffff;
+    padding: 30px;
+
+
+    border-radius: 10px;
+}
+
+.academia span {
+    color: yellow;
+    font-size: 5vw;
+}
+
+.academia p{
+    font-size: 1.6vw;
+}
+
+
+.sobre-nos-p .carousel {
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.sobre-nos-p .carousel img[src="imagens/seta.svg"]{
+    width: 3vw;
+    height: 3vw;
+    background-color: #ffffff;
+    border-radius: 100%;
+}
+
+
+/*Fim da segunda parte*/
+
+@media (max-width:1024px) and (min-width:600px) {
+    
+}
+
+
+
+/*Fim do código referente ao sobre nós*/
