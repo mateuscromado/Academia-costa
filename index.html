@@ -150,37 +150,37 @@
             <div class="barra-servicos"></div>
         </div>
         <section class="servicos-p">
-            <nav class="cards">
+            <nav class="cards" id="rolar">
                 <div class="card">
                     <span>Musculação</span>
                     <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/08/08/92887309-musculacao.jpg" alt="Musculação">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quidem officiis expedita in
-                        ratione doloribus tempore sequi dicta id ea.</p>
+                    <p>A musculação promove a tonificação dos músculos. Portanto, eles ficam mais fortes e rígidos. Além de demonstrar o ganho de força.</p>
                 </div>
 
                 <div class="card">
-                    <span>Musculação</span>
-                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/08/08/92887309-musculacao.jpg" alt="Musculação">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quidem officiis expedita in
-                        ratione doloribus tempore sequi dicta id ea.</p>
+                    <span>Kickboxing</span>
+                    <img src="https://centrodevitoria.com.br/wp-content/uploads/sites/13/2022/09/Kick-Boxing.jpg" alt="Musculação">
+                    <p>combina exercícios de fortalecimento corporal e resistência cardiovascular, que atuam para aprimorar o equilíbrio, a coordenação e os reflexos.</p>
                 </div>
 
                 <div class="card">
-                    <span>Musculação</span>
-                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/08/08/92887309-musculacao.jpg" alt="Musculação">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quidem officiis expedita in
-                        ratione doloribus tempore sequi dicta id ea.</p>
+                    <span>Funcional</span>
+                    <img src="https://marcioatalla.com.br/wp-content/uploads/2021/12/embarque-no-treino-funcional.jpg" alt="Musculação">
+                    <p>Pular, correr, puxar, agachar, girar e empurrar. O praticante ganha força, equilíbrio, flexibilidade, condicionamento, resistência e agilidade..</p>
                 </div>
 
                  <div class="card">
-                    <span>Musculação</span>
-                    <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/08/08/92887309-musculacao.jpg" alt="Musculação">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quidem officiis expedita in
-                        ratione doloribus tempore sequi dicta id ea.</p>
+                    <span>Zumba</span>
+                    <img src="https://pratiquefitness.com.br/wp-content/uploads/2019/05/Tudo-sobre-a-ginastica-de-zumba-3.jpg" alt="Musculação">
+                    <p>Misturando movimentos aeróbicos com ritmos e coreografias latinas, como a salsa, mambo, merengue e reggaeton.</p>
                 </div>
             </nav>
         </section>
+
     </section>
+
+
+    
 
 
 
@@ -208,6 +208,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+
+        <script>
+            // Obtém a referência do elemento com overflow
+
+            var elementoComOverflow = document.getElementById('rolar');
+
+// Define a posição da barra de rolagem para o final
+function roo(){
+            elementoComOverflow.scrollTop = elementoComOverflow.scrollHeight;
+
+}
+        </script>
 </body>
 
 </html>
