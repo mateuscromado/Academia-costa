@@ -1,7 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Pathway Gothic One', sans-serif !important}
+    font-family: 'Pathway Gothic One', sans-serif !important;
+
+}
 
 /*Começo do código referente ao cabeçalho do site*/
 .header {
@@ -76,7 +78,7 @@
 /*Tablet 1024px a 600px*/
 @media (max-width:1024px) and (min-width:600px) {
     .links a {
-        font-size: 1rem;
+        font-size: 4vw;
     }
 }
 
@@ -84,7 +86,7 @@
 /*Celular 600px abaixo*/
 @media (max-width:600px) {
     .links a {
-        font-size: .8rem;
+        font-size: 4vw;
     }
 }
 
@@ -183,7 +185,7 @@
     width: 70vw;
     gap: 5vw;
     display: flex;
-align-items: center;
+    align-items: center;
     margin: 0 auto;
 }
 
@@ -202,7 +204,7 @@ align-items: center;
     font-size: 5vw;
 }
 
-.academia p{
+.academia p {
     font-size: 1.6vw;
 }
 
@@ -216,7 +218,7 @@ align-items: center;
 
 }
 
-.sobre-nos-p .carousel img[src="imagens/seta.svg"]{
+.sobre-nos-p .carousel img[src="imagens/seta.svg"] {
     width: 3vw;
     height: 3vw;
     background-color: #ffffff;
@@ -225,10 +227,109 @@ align-items: center;
 
 
 /*Fim da segunda parte*/
-
+/*Começo da responsividade do Tablet de 1024px a 600px*/
 @media (max-width:1024px) and (min-width:600px) {
-    
+
+    .sobre-nos {
+        height: auto;
+    }
+
+    .sobre-nos-p {
+        display: block;
+    }
+
+    .academia {
+        margin: 50px auto;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .academia span {
+        font-size: 3rem;
+
+    }
+
+    .sobre-nos-p .carousel {
+        height: auto;
+    }
+
+    .titulo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .academia p {
+        text-align: justify;
+        font-size: 1.3rem;
+    }
+
+    .t1 {
+        font-size: 2rem;
+    }
+
+    .t2 span {
+        font-size: 8vw;
+
+    }
+
+    .t2 {
+        width: 50%;
+        margin: 0 auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
+
+/*Fim da responsividade do Tablet*/
+
+/*Começo da responsividade do celular*/
+@media (max-width:600px) {
+    .sobre-nos-p {
+        display: block;
+    }
+
+    .titulo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .t1 {
+        font-size: 6vw;
+    }
+
+    .t2 {
+        text-align: center;
+        font-size: 15vw;
+    }
+
+    .academia {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5vw ;
+
+    }
+
+    .academia span {
+        font-size: 6vw;
+    }
+
+    .academia p {
+        font-size: 4vw;
+    }
+
+    .sobre-nos-p .carousel img[src="imagens/seta.svg"] {
+        width: 10vw;
+        height: 10vw;
+    }
+
+  
+
+
+}
+
+/*Fim da responsividade do celular*/
+
 
 
 
