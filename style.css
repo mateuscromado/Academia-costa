@@ -594,5 +594,227 @@
 }
 
 /*Fim da responsividade do celular*/
-
 /*Fim do código referente aos depoimentos*/
+
+
+
+
+
+/*Começo do código referente aos beneficios*/
+.beneficios{
+    width: 100vw;
+    background-color: #D9D9D9;
+}
+
+.beneficios-p{
+    width: 100%;
+}
+
+.beneficios-container{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.beneficios-container> img{
+    width: 40vw;
+    border-radius: 20px;
+    border: solid black 3px;
+}
+/*Começo do titulo*/
+
+.titulo-bene{
+    width: 25vw;
+    margin: 0 auto;
+}
+.titulo-bene span{
+    font-size: 3vw;
+}
+
+.titulo-bene h1{
+    background-color: yellow;
+    color: black;
+    font-size: 7vw;
+
+
+    padding: 0 .2vw;
+    border-radius: 10px;
+}
+
+/*Começo da responsividade do titulo*/
+@media (max-width:600px) {
+    .titulo-bene{
+        width: 40vw;
+    }
+    .titulo-bene span{
+        font-size: 6vw;
+    }
+    .titulo-bene h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+}
+/*Fim da responsividade do titulo*/
+
+/*Fim do titulo*/
+
+/*Começo do container*/
+
+.beneficios-container li{
+    display: flex;
+
+    align-items: center;
+
+    margin: 20px 0;
+
+
+}
+.beneficios-container h1{
+        font-size: 4vw;
+
+}
+
+.beneficios-container li img{
+    width: 8vw;
+}
+
+/*Imagem do container*/
+
+.bene-img{
+    border-radius: 10px;
+border: black solid 3px;
+}
+/*Fim do container*/
+
+
+@media (max-width:600px) {
+    .beneficios-container{
+        display: block ;
+    }
+
+    .beneficios-container ul {
+        width: 65vw;
+        margin: 0 auto;
+        display: block;
+    }   
+
+    .beneficios-container li{
+        width: 100%;
+        justify-content: left;
+    }
+
+    .beneficios-container ul li h1{
+        font-size: 7vw;
+    }
+
+    .beneficios-container > img{
+        width: 80vw;
+        margin: 0 auto;
+
+        display: block;
+    }
+}
+/*Fim do código referente aos beneficios*/
+
+/*Começo do código referente ao contato*/
+.contato{
+    width: 100vw;
+
+}
+.contato-p{
+    width: 100%;
+    background-color: #121212;
+    color: #ffffff;
+}
+/*Começo do titulo*/
+.titulo-contato{
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.titulo-contato h1{
+        font-size: 8vw;
+
+}
+
+.titulo-contato > div{
+    width: 100%;
+    border-radius: 10px;
+    height: 15px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+
+
+/*Fim do titulo*/
+
+/*Icones*/
+.icons{
+    width: 50%;
+    margin: 10vw auto;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.icons img{
+    filter: invert(10);
+    width: 10vw;
+}
+
+.rua h1{
+    text-align: center;
+
+}
+.rua{
+    margin-bottom: 10vw;
+}
+
+@media (max-width:600px) {
+    .icons img{
+        width: 20vw;
+    }
+
+    .icons{
+        width: 100%;
+    }
+}
+
+/*Fim do código referente ao contato*/
+
+/*Começo da marca registrada de mateus pereira*/
+.mateus{
+    
+    width: 100vw;
+    height: 5vw;
+    background-color: #000000;
+    color: #ffffff;
+
+
+   
+
+}
+.mateus img{
+    height: 5vw;
+}
+
+.mateus a{
+    color: #ffffff;
+    text-decoration: none; display: flex;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    
+    .mateus{
+        height: 10vw;
+    }
+    .mateus a{
+        height: 10vw;
+
+    }
+    .mateus a img{
+        height: 10vw;
+    }
+}
