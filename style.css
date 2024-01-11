@@ -167,7 +167,7 @@
 
 .t2 {
     text-align: left;
-    font-size: 6.8vw;
+    font-size: 7vw;
 
 }
 
@@ -263,12 +263,12 @@
         font-size: 1.3rem;
     }
 
-    .t1 {
-        font-size: 2rem;
+    .t1  p {
+        font-size: 6vw;
     }
 
     .t2 span {
-        font-size: 8vw;
+        font-size: 13vw;
 
     }
 
@@ -278,6 +278,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .titulo-bene span{
+        font-size: 6vw;
+    }
+
+    .titulo-bene h1{
+        font-size: 13vw;
     }
 }
 
@@ -347,7 +355,7 @@
 }
 
 .titulo-servicos span {
-    font-size: 4rem;
+    font-size: 7rem;
     color: #ffffff;
     text-align: center;
 }
@@ -397,7 +405,8 @@
 
 .card img {
     width: 90%;
-    max-height: 30vw;
+    max-height: 20vw;
+    min-height: 20vw;
     margin: 0 auto;
     border-radius: 10px;
     border: solid yellow 2px;
@@ -406,27 +415,46 @@
 /*Começo da responsividade do tablet*/
 @media (max-width:1024px) {
 
-    .cards {
+    .cards[id="rolar"] {
         gap: 0;
+        display: block;
     }
 
+.titulo-servicos{
+    font-size: 13vw;
+}
     .card {
         min-width: 40vw !important;
 
-        margin: 0 3vw;
+        margin: 8vw 3vw;
+    }
+
+    .card img{
+        min-height: 600px !important;
     }
 
     .card span {
-        font-size: 7vw !important;
+        font-size: 12vw !important;
     }
 
 
     .card p {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 
     .titulo-servicos span {
         font-size: 13vw;
+    }
+
+    .card-depoimento{
+        min-width: 80vw !important;
+        height: auto !important;
+
+    }
+
+    .card-depoimento img{
+        width: 40vw !important;
+        height: 40vw !important;
     }
 }
 
@@ -443,8 +471,31 @@
 
 
     .card img {
-        min-height: 40vw !important;
-    }
+
+height: 200px !important;  
+min-height: 200px !important;
+max-height: 200px !important;
+  }
+
+  
+}
+
+@media (max-width:1024px) {
+   .cards-depoimentos{
+    display: block !important   ;
+   } 
+   .card-depoimento{
+    margin: 10vw auto !important;
+    
+   }
+
+   .card-depoimento p{
+    font-size: 5vw !important;
+   }
+
+   .card-depoimento span{
+    font-size: 8vw !important;
+   }
 }
 
 /*Fim da responsividade do tablet*/
@@ -486,7 +537,7 @@
     background-color: rgb(255, 255, 0);
     width: 100%;
     border-radius: 10px;
-    height: 1vw;
+    height: 2vw;
 }
 
 /*Fim do código do titulo*/
@@ -540,6 +591,8 @@
     text-align: center;
 }
 
+
+
 /*Começo da responsividade do tablet*/
 @media (max-width:1024px) {
     .card-depoimento {
@@ -554,6 +607,19 @@
     .card-depoimento p {
         font-size: 2.5vw;
     }
+
+    .titulo-dep{
+        width: 55vw;
+    }
+
+    .titulo-dep span:first-of-type,
+.titulo-dep span:last-of-type {
+    font-size: 6vw;
+}
+
+.titulo-dep span:nth-of-type(2) {
+    font-size: 13vw;
+}
 }
 
 /*Fim da responsividade do tablet*/
@@ -634,7 +700,7 @@
 .titulo-bene h1{
     background-color: yellow;
     color: black;
-    font-size: 7vw;
+    font-size: 7vw; 
 
 
     padding: 0 .2vw;
@@ -642,7 +708,7 @@
 }
 
 /*Começo da responsividade do titulo*/
-@media (max-width:600px) {
+@media (max-width:1024px) {
     .titulo-bene{
         width: 40vw;
     }
@@ -650,8 +716,27 @@
         font-size: 6vw;
     }
     .titulo-bene h1{
-        font-size: 10vw;
+        font-size: 13vw;
         text-align: center;
+    }
+
+
+
+    .beneficios-container{
+        display: block;
+    }
+.beneficios-container li{
+    gap: 1vw;
+}
+    .beneficios-container > ul{
+        width: 40vw;
+        margin:  0 auto;
+    }
+
+    .beneficios-container > img{
+        margin: 10vw auto !important;
+        display: block;
+        width: 80vw;
     }
 }
 /*Fim da responsividade do titulo*/
@@ -715,6 +800,37 @@ border: black solid 3px;
     }
 }
 /*Fim do código referente aos beneficios*/
+
+/*Começo do código referente aos preços*/
+.planos{
+    width: 100vw;
+}
+.planos-p{
+    width: 100%;
+}
+
+.cards-1{
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.card-1-p{
+    width: 20vw;
+    height: 25vw;
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.card-1-p img{
+    width: 15vw ;
+    height: 9vw;
+    margin: 0 auto;
+    background-color: aqua;
+}
+/*Fim do código referente aos preços*/
 
 /*Começo do código referente ao contato*/
 .contato{
