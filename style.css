@@ -107,7 +107,7 @@ html{
 }
 
 .carousel img {
-    max-height: 80vh;
+    height: 100vh;
 }
 
 .seta-p {
@@ -124,6 +124,8 @@ html{
 .seta-p img {
     height: 5vw;
 }
+
+
 
 /*Começo da responsividade do slider*/
 
