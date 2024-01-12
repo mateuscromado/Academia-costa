@@ -430,7 +430,9 @@
     }
 
     .card img{
-        min-height: 600px !important;
+        width: 70vw;
+        height: 40vw;
+        min-height: 40vw;
     }
 
     .card span {
@@ -710,7 +712,7 @@ max-height: 200px !important;
 /*Começo da responsividade do titulo*/
 @media (max-width:1024px) {
     .titulo-bene{
-        width: 40vw;
+        width: 45vw;
     }
     .titulo-bene span{
         font-size: 6vw;
@@ -801,36 +803,417 @@ border: black solid 3px;
 }
 /*Fim do código referente aos beneficios*/
 
-/*Começo do código referente aos preços*/
-.planos{
+/*Começo do código referente aos planos*/
+
+.precos , .precos-p{
     width: 100vw;
+
 }
-.planos-p{
+
+/*Começo do titulo dos planos*/
+
+.titulo-planos{
+    margin-top: 10vw;
+    width: 100%;
+    color: #121212;
+    text-align: center;
+    font-size: 7vw;
+}
+
+.titulo-planos h1{
+    font-size: 8vw;
+}
+.titulo-planos .barra{
+    height: 1vw;
+    width: 25%;
+    background-color: yellow;
+    border-radius: 10px;
+
+    margin: 0 auto;
+}
+
+/*Preços de mensasalidade unica*/
+.mensal{
     width: 100%;
 }
 
-.cards-1{
+
+
+/*fim os preços de mensalidade unica*/
+
+
+
+@media (max-width:1024px) {
+
+    .titulo-planos h1{
+        font-size: 13vw;
+    }
+
+    .titulo-planos .barra{
+        width: 40%;
+        height: 2vw;
+    }
+}
+/*Fim dos titulos dos planos*/
+
+/*Planos mensais*/
+.plano{
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 4vw;
+    margin: 10vw auto;
+
+
+}
+.funcional{
+    width: 25vw;
+    background-color: #121212;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
-.card-1-p{
-    width: 20vw;
-    height: 25vw;
+.funcional img{
+    width: 30%;
+    filter: invert(1);
+    opacity: 80%;
+
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+
+.musculação{
+    width: 30vw;
+}
+
+.icons3{
+    display: flex;
+    align-items: end;
+}
+
+.icons3 img{
+width: 20%;
+height: 100%;
+
+}
+
+.icons3 img:nth-of-type(2){
+    width: 10vw !important;
+}
+
+.funcional h1{
+    font-size: 3.5vw;
+    text-align: center;
+    color:#ffffff
+}
+
+.funcional h2{
+    font-size: 2.5vw;
+    color: rgb(177, 177, 0);
+    text-align: center;
+}
+
+.funcional span{
+    font-size: 4vw;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+
+}
+.funcional p{
+    font-size: 1.5vw;
+    text-align: center;
+    color: #D9D9D9;
+    
+}
+
+.funcional a{
+    width: 80%;
+    margin: 2vw auto;
+    display: block;
+    height: 3vw;
+    border-radius: 30px;
+    border: none;
+    background-color: green;
+    color: #ffffff;
+    font-size: 2vw;
+    text-align: center;
+    text-decoration: none;
+}
+.ocultar{
+    display: none;
+}
+
+.plano-0{
+    width: 100%;
+    display: none;
+}
+
+
+.plano div:nth-of-type(2) a{
+    animation-name: pulsar;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+}
+
+@media (max-width:1024px) {
+    .plano div:nth-of-type(2){
+        display: none !important;
+    }
+
+    .plano-0{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.plano-0 .funcional{
+    width: 350px;
+}
+
+.plano .funcional{
+    width: 40vw;
+}
+
+.plano .funcional h1{
+    font-size: 6vw;
+}
+.plano .funcional h2{
+font-size: 4vw;
+}
+.plano .funcional span{
+    font-size: 6vw ;
+}
+
+.plano .funcional a{
+font-size: 5vw;
+height: auto;
+}
+.plano-0 .funcional img:nth-of-type(2){
+width: 30% !important;
+
+}
+
+.plano-0 .funcional a{
+    font-size: 4vw;
+    height: auto;
+}
+.plano-0 .funcional span{
+    font-size: 6vw;
+}
+.plano-0 .funcional h2{
+    font-size: 4vw;
+}
+.plano-0 h1{
+    font-size: 6vw;
+}
+
+.plano-0 p{
+    font-size: 3vw;
+}
+
+.plano-0 .funcional a{
+    animation-name: pulsar;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+
+}
+
+}
+
+
+@media (max-width:600px) {
+    .plano-0 .funcional{
+        width: 80vw
+    }
+    
+    .plano .funcional{
+        width: 60vw;
+    }
+    
+    .plano .funcional h1{
+        font-size: 10vw;
+    }
+    .plano .funcional h2{
+    font-size: 7vw ;
+    }
+    .plano .funcional span{
+        font-size: 10vw ;
+    }
+    
+    .plano .funcional a{
+    font-size: 8vw;
+    height: auto;
+    padding: 0 4vw;
+    }
+    .plano-0 .funcional img:nth-of-type(2){
+    width: 30% !important;
+    
+    }
+    
+    .plano-0 .funcional a{
+        font-size: 8vw;
+        height: auto;
+
+        animation-name: pulsar;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+    }
+    .plano-0 .funcional span{
+        font-size: 13vw;
+    }
+    .plano-0 .funcional h2{
+        font-size: 6vw;
+    }
+    .plano-0 h1{
+        font-size: 10vw;
+    }
+    
+    .plano-0 p{
+        font-size: 6vw;
+    }
+
+    .plano-0 .funcional a{
+        animation-name: pulsar;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    }
+    
+}
+
+
+
+/*Fim dos planos mensais*/
+/*Começo do plano trimestral*/
+.trimestral{
+    width: 100vw;
+}
+
+.plano-1{
+    width: 60vw;
     background-color: #121212;
+    margin: 0 auto;
     color: #ffffff;
     text-align: center;
+
+
+    border-radius: 20px;
+}
+
+.plano-1 h1{
+    font-size: 6vw;
+}
+
+.plano-1 p{
     font-size: 2vw;
 }
 
-.card-1-p img{
-    width: 15vw ;
-    height: 9vw;
-    margin: 0 auto;
-    background-color: aqua;
+
+.plano-1 imgs{
+    display: flex;
 }
-/*Fim do código referente aos preços*/
+
+.imgs img{
+    width: 20%;
+    filter: invert(10);
+    opacity: 80%;
+}
+.imgs img:nth-of-type(2){
+    width: 25%;
+}
+
+.plano-1 span{
+    font-size: 3.5vw;
+    color: yellow;
+}
+
+.plano-1 h2{
+    font-size: 8vw;
+}
+
+.plano-1 a{
+    width: 80%;
+    margin: 2vw auto;
+    display: block;
+    border-radius: 30px;
+    border: none;
+    background-color: green;
+    color: #ffffff;
+    font-size: 4vw;
+    text-align: center;
+    text-decoration: none;
+
+animation-name: pulsar;
+animation-duration: 1.5s;
+animation-iteration-count: infinite;
+    }
+@media (max-width:1024px) {
+    
+   
+.plano-1{
+    width: 90vw !important;
+}
+.plano-0{
+    margin-bottom: 10vw;
+}
+
+.plano-1 h1{
+    font-size: 13vw;
+}
+
+.plano-1 p{
+    font-size:4vw;
+}
+
+
+.plano-1 imgs{
+    display: flex;
+}
+
+.imgs img{
+    width: 25%;
+    filter: invert(10);
+    opacity: 80%;
+}
+.imgs img:nth-of-type(2){
+    width: 30%;
+}
+
+.plano-1 span{
+    font-size: 8vw;
+    color: yellow;
+}
+
+.plano-1 h2{
+    font-size: 13vw;
+}
+
+.plano-1 a{
+    font-size: 13vw;
+    margin-bottom: 10vw;
+}
+
+}
+
+@keyframes pulsar {
+    0%{
+scale: 1;
+    }
+    50%{
+        scale: 1.1;
+    }
+
+    100%{
+        scale: 1;
+    }
+}
+
+
+/*Fim do plano trimestral*/
+/*Fim do código referente aos planos*/
+
 
 /*Começo do código referente ao contato*/
 .contato{
@@ -889,12 +1272,25 @@ border: black solid 3px;
 
 @media (max-width:600px) {
     .icons img{
-        width: 20vw;
+        width: 25vw;
     }
 
     .icons{
         width: 100%;
     }
+
+    .contato, .contato-p{
+        height: 60vh;
+        
+    }
+    .contato-p{
+        padding-top: 25%;
+    }
+}
+
+
+@media (max-width) {
+    
 }
 
 /*Fim do código referente ao contato*/
