@@ -14,6 +14,10 @@
     align-items: center;
     padding-left: 1vw;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 .header-p {
     display: flex;
@@ -378,7 +382,6 @@
 .cards {
     display: flex;
     width: 100vw;
-    overflow-x: scroll;
 
 }
 
@@ -551,7 +554,6 @@ max-height: 200px !important;
 .cards-depoimentos {
     width: 100vw;
     display: flex;
-    overflow-x: scroll;
 
 }
 
@@ -1219,11 +1221,16 @@ scale: 1;
 .contato{
     width: 100vw;
 
+    height: auto;
+    overflow-x: hidden;
+
 }
 .contato-p{
     width: 100%;
     background-color: #121212;
     color: #ffffff;
+    height: auto;
+    overflow-x: hidden;
 }
 /*Começo do titulo*/
 .titulo-contato{
