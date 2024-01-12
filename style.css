@@ -1288,6 +1288,7 @@ scale: 1;
 
     .contato, .contato-p{
         height: 60vh;
+        overflow-y: hidden;
         
     }
     .contato-p{
